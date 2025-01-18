@@ -37,8 +37,7 @@ CHECK_ROOT
  VALIDATE $? "Installing MYSQL server"
 
  systemctl enable mysqld &>>$LOG_FILE_NAME
- VALIDATE $? "Enabl
- ing MYSQL server"
+ VALIDATE $? "Enabling MYSQL server"
 
  systemctl start mysqld &>>$LOG_FILE_NAME
  VALIDATE $? "starting MYSQL server"
